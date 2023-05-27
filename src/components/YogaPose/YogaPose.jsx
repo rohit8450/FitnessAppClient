@@ -43,7 +43,7 @@ function YogaPose() {
                     {singleData.map((yoga, index) => {
                         return (
                             <Col id={yoga._id} key={index} xs={6} md={4} lg={3} style={{marginBottom:"2%"}}>
-                                <iframe className="yoga-demo-video" src={`https://www.youtube.com/embed/${yoga.videoId}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe className="yoga-demo-video" src={`https://www.youtube.com/embed/${yoga.videoId}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                                 <Card>
                                     <Card.Img variant="top" src={yoga.imgUrl} />
                                     <Card.Body>

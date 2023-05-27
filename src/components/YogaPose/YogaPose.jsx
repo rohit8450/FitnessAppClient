@@ -19,7 +19,7 @@ function YogaPose() {
         
         const getSingleMovies = async () => {
             try {
-                const response = await axios.get(`http://localhost:8000/api/specific-yoga-pose/${yogaID}`);
+                const response = await axios.get(`https://fitness-app-server-xh2v.onrender.com/api/specific-yoga-pose/${yogaID}`);
 
                 console.log(response);
 
@@ -49,6 +49,7 @@ function YogaPose() {
                                     <Card.Body>
                                     <Card.Title>{yoga.posename}</Card.Title>
                                     <Card.Text>{yoga.duration}</Card.Text>
+                                    <Card.Text>{yoga.relexationTime}</Card.Text>
                                     </Card.Body>
                                 </Card>
                             </Col>

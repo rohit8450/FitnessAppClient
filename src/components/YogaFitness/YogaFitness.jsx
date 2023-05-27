@@ -15,7 +15,7 @@ const YogaFitness = () => {
 
     const getDetails = async () => {
       
-      const response = await axios.get('http://localhost:8000/api/all-yoga-pose');
+      const response = await axios.get('https://fitness-app-server-xh2v.onrender.com/api/all-yoga-pose');
       console.log(response);
       setYogaPose(response.data);
     }
